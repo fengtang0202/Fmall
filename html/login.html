@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/login.css">
+	
+	<script src="../js/common.js"></script>
+	<script src="../js/login.js"></script>
+	<style>
+		input{
+			width:300px;
+			height:40px;
+			border:1px solid #ccc;
+			border-radius:5px;
+		}
+		form{
+			margin-top:230px;
+		}
+	</style>
+</head>
+<body>
+    <form action="">
+	    <div>
+			<span id="unam"></span>
+		    <input type="text" id="uname" onblur="text()" placeholder="     请输入用户名">
+		</div>
+	    <div>
+			<span id="upw"></span>	
+		    <input type="password" id="upwd" onblur="password()" placeholder="     请输入密码">
+			
+		</div>
+			<p id="error"></p>
+		<div class="clear">
+			<a onclick="find()">登录</a>
+			<a href="../init.html">首页</a>
+			<a href="register.html" >注册</a>
+			
+		</div>
+	</form>	
+		
+</body>
+</html>

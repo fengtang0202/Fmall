@@ -1,0 +1,193 @@
+/*本文件只针对subdivision.html*/
+
+/*************/
+.add{
+	color: #fff;
+    background: #f05;
+	transition:all 2s linear;
+}
+.addColor{
+	color: #fff;
+    background: #f05;
+	transition:all 2s linear;
+}
+
+.aa{
+	color:#f05;
+	transition:all 2s linear;
+}
+/*.....................*/
+#title{
+	width:1198px;
+	margin:0px auto;
+	border: 1px solid #e5e5e5;
+}
+#title>ul{
+	background:#FAFAFA;
+	border-bottom: 1px solid #e5e5e5;
+}
+#title>ul a{
+	cursor:pointer;
+	padding: 5px 10px;
+}
+#title>ul>li{
+	float:left;
+    height: 38px;
+    line-height: 38px;
+    font-family: Microsoft Yahei;
+    color: #333;
+    font-size: 18px;
+	margin-left:60px;
+}
+#title>ul>li:nth-child(1){
+	font-weight: 800;
+}
+#title>ul>li:nth-child(1)~li{
+	margin-left:90px;
+}
+#title div li{
+	float:left;
+}
+#title div ul{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#title div li:nth-child(1){
+	font-size:16px;
+	color:#000;
+	margin-left:60px;
+	font-weight: 500;
+}
+#title div li:nth-child(1)~li{
+	margin-left:95px;
+	font-size:16px;
+	color:#000;
+	text-align:center;
+}
+#title div a{
+	cursor:pointer;
+	padding: 5px 10px;
+}
+/*内容样式*/
+#content{
+	width:1198px;
+	margin:0px auto;
+/*	border: 1px solid #e5e5e5;*/
+}
+#content h3{
+	line-height: 32px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 30px;
+    margin-left: 58px;
+    margin-bottom: 20px;
+}
+
+
+#content .clear li{
+	float:left;
+	cursor:pointer;
+}
+#content>ul>li{
+	width:220px;
+	margin-left:62px;
+	margin-bottom:30px;
+	border:1px solid transparent;
+}
+#content>ul>li:hover{
+	border:1px solid #FF5577;
+}
+#content>ul>li>img{
+	width:220px;
+	height:330px;
+}
+#content li li img{
+	width:14px;
+	height:14px;
+}
+#content  ul ul{
+	padding:0 10px;
+	margin-bottom:20px;
+}
+#content  li p{
+	font-size:14px;
+	color:#444;
+	height:40px;
+	line-height:21px;
+	margin-top:10px;
+	margin-bottom:5px;
+	padding:0 10px;
+	overflow: hidden;
+}
+#content  li p:hover{
+	color:#FF5577;
+}
+#content li li:nth-child(1){
+    color: #000;
+    font-weight: 700;
+    font-size: 17px;
+}
+#content li li:nth-child(2){
+    font-size: 14px;
+    color: #666;
+    margin: 2px 0 0 13px;
+    line-height: 20px;
+}
+#content li li:nth-child(3){
+    font-size: 12px;
+    color: #999;
+	margin: 5px 0px 0px 28px;
+}
+#content>div{
+	text-align:center;
+}
+
+/*分页*/
+	.pager-bg { padding:15px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+	.k_pape { overflow: hidden; text-align: center; font-size: 12px; }
+	.k_pape span.count {
+    float: right;
+    height: 23px;
+    line-height: 23px;
+    margin-right: 2px;
+    padding: 5px 4px 0px;
+    color: rgb(51, 51, 51);
+	}
+	.k_pape a:link, .k_pape a:visited {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 221, 221);
+    color: rgb(85, 85, 85);
+    display: inline;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 1px;
+    padding: 0px 10px;
+    margin-left: 3px;
+    text-decoration: none;
+    margin-top: 2px;
+	}
+
+	.k_pape a.pagenow {
+    background-color: rgb(7, 167, 225);
+    border: 1px solid rgb(7, 167, 225);
+    color: rgb(255, 255, 255);
+    float: left;
+    font-weight: bold;
+    height: 26px;
+    line-height: 26px;
+    margin: 2px;
+    padding: 0px 10px;
+    text-align: center;
+    font-style: normal;
+	}
+
+	#pagination{
+		display: inline-block;
+	}
+
+	#pagination a{
+		margin-left:10px;
+		margin-right:10px;
+	}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/cart.css">
+	<link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+	<header>
+		<div class="headerTop clear">
+			<div class="headerTopLeft">
+				<span></span>
+				<a href="../index.html">蘑菇街首页</a>
+			</div>
+			<ul class="headerTopRight clear">
+				<li data-login="login">
+					<a href="../html/login.html">你好,请登录</a>
+					<span>|</span>
+				</li>
+				<li data-register="register">
+					<a href="../html/register.html">免费注册</a>
+					<span>|</span>
+				</li>
+				<li>
+					<b></b>
+					<a href="#">我的订单</a>
+					<span>|</span>
+				</li>
+				<li>
+					<b></b>
+					<a href="#">购物车</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="javascript:;">客服服务</a>
+					<b></b>
+					<span>|</span>
+					<ul>
+						<li><a href="javascript:;">消费者服务</a></li>
+						<li><a href="javascript:;">商家服务</a></li>
+						<li><a href="javascript:;">消费者中心</a></li>
+					</ul>
+				</li>
+				<li>
+					<b class="b1"></b>
+					<a href="javascript:;">我的小店</a>
+					<b class="b2"></b>
+					<ul>
+						<li><a href="javascript:;">管理后台</a></li>
+						<li><a href="javascript:;">商家社区</a></li>
+						<li><a href="javascript:;">商家培训</a></li>
+						<li><a href="javascript:;">市场入驻</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div id="header">
+			<span>我的购物车</span>
+	</div>
+	<!--购物车-->
+	<div class="cartMain">
+		<!--1.购物车商品头部信息-->
+		<div class="cartMain_hd">
+			<ul class="order_lists cartTop">
+				<li class="list_chk">
+					<!--所有商品全选-->
+					<div class="all">
+					</div>
+					全选
+				</li>
+				<li class="list_con">商品信息</li>
+				<li class="list_info">颜色,尺寸</li>
+				<li class="list_price">单价</li>
+				<li class="list_amount">数量</li>
+				<li class="list_sum">金额</li>
+				<li class="list_op">操作</li>
+			</ul>
+		</div>
+		<!--2.购物车商品详细信息-->
+		<div class="cartBox">
+			<div class="order_content">
+				<!--<ul class="order_lists">
+					<li class="list_chk">
+						<div></div>
+					</li>
+					<li class="list_con">
+						<div class="list_img">
+							<a href="javascript:;">
+								<img src="../images/cart/f22.jpg" alt="">
+							</a>
+						</div>
+						<div class="list_text">
+							<a href="javascript:;">好孩子新生婴儿橄榄洗发水</a>
+						</div>
+					</li>
+					<li class="list_info">
+						<p>规格：默认</p>
+						<p>尺寸：200ml/瓶</p>
+					</li>
+					<li class="list_price">
+						<p class="price">￥100</p>
+					</li>
+					<li class="list_amount">
+						<div class="amount_box">
+							<a href="javascript:;" class="reduce reSty">-</a>
+							<input type="text" value="1" class="sum">
+							<a href="javascript:;" class="plus">+</a>
+						</div>
+					</li>
+					<li class="list_sum">
+						<p class="sum_price">￥100</p>
+					</li>
+					<li class="list_op">
+						<p class="del">
+							<a href="javascript:;" class="delBtn">
+								移除商品
+							</a>
+						</p>
+					</li>
+				</ul>-->
+			</div>
+		</div>
+		<!--3.购物车底部总计-->
+		<div class="bar-wrapper">
+			<div class="bar-right">
+				<div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+				<div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+				<div class="calBtn"><a href="javascript:;">结算</a></div>
+			</div>
+		</div>
+	</div>
+	<!--执行移除商品时的提示框-->
+	<div class="model_bg"></div>
+	<div class="my_model">
+		<p class="title">删除宝贝<span class="closeModel">X</span></p>
+		<p>您确认要删除该宝贝吗？</p>
+		<div class="ckBtn">
+			<a href="javascript:;" class="dialog-sure">确定</a>
+			<a href="javascript:;" class="dialog-close">关闭</a>
+		</div>
+	</div>
+	<!-- 尾部 -->
+	<footer></footer>
+<script src="../js/jquery.js"></script>
+
+<script src="../js/cart.js"></script>
+
+
+</body>
+</html>

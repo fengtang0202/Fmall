@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<!-- 	<script src="../css/register.css"></script> -->
+	<link rel="stylesheet" href="../css/login.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<script src="../js/common.js"></script>
+	<script src="../js/register.js"></script>
+</head>
+<body>   
+	<form action="" method="post">
+	    <div>
+			<div>
+ 				<span id="una"></span>
+			</div>
+		    注册账户：<input type="text" id="uname" onblur="y_uname()">
+		</div>
+	    <div>
+			<div>
+				<span id="show-upwd"></span>
+			</div>
+		    用户密码：<input type="password" id="upwd" onblur="y_upwd()">
+		</div>  
+	    <div>
+			<div>
+				<span id="show-pwd"></span>
+			</div>
+		    确认密码：<input type="password" id="cpwd" onblur="y_cpwd()">
+		</div>
+	    <div>
+			<div>
+				<span id="show-email"></span>
+			</div>
+		    电子邮箱：<input type="text" id="email" onblur="y_email()">
+		</div>
+	    <div>
+			<div>
+				<span id="show-phone"></span>
+			</div>
+		    手机号码：<input type="text" id="phone" onblur="y_phone()">
+		</div>
+	    <div>
+			<div>
+				<span id="show-user"></span>
+			</div>
+		    用户姓名：<input type="text" id="user_name" onblur="y_user()">
+		</div>
+		<select name="gender" id="gender" style="display:none">性别：
+		    <option value="0">男</option>
+		    <option value="1">女</option>
+		</select>
+		<div class="clear">
+			<a href="javascript:;" onclick="register()" >注册</a>
+			<a href="../init.html">首页</a>
+			<a href="login.html">登录</a>
+			
+		</div>	
+		
+	</form>		   
+</body>
+</html>

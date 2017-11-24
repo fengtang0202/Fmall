@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/banner.css"> 
+	<link rel="stylesheet" href="css/init.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>  
+<body> 
+    <!--  页面顶部  -->
+	<header>
+		<div class="headerTop clear">
+			<div class="headerTopLeft">
+				<span></span>
+				爱美丽首页
+			</div>
+			<ul class="headerTopRight clear">
+				<li data-login="login">
+					<a href="html/login.html" style="color:#f05">你好,请登录</a>
+					<span>|</span>
+				</li>
+				<li data-register="register">
+					<a href="html/register.html">免费注册</a>
+					<span>|</span>
+				</li>
+				<li>
+					<b></b>	
+					<a href="#">我的订单</a>
+					<span>|</span>
+				</li>
+				<li>
+					<b></b>	
+					<a href="html/cart.html">购物车</a>
+					<span>|</span>
+				</li>
+				<li>
+					<a href="#">客服服务</a>
+					<b></b>	
+					<span>|</span>
+					<ul>
+						<li><a href="#">消费者服务</a></li>
+						<li><a href="#">商家服务</a></li>
+						<li><a href="#">消费者中心</a></li>
+					</ul>
+				</li>
+				<li>
+					<b class="b1"></b>
+					<a href="#">我的小店</a>
+					<b class="b2"></b>
+					<ul>
+						<li><a href="#">管理后台</a></li>
+						<li><a href="#">商家社区</a></li>
+						<li><a href="#">商家培训</a></li>
+						<li><a href="#">市场入驻</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="headerBottom">
+			<div class="logo">
+ 				<!--<img src="../image/header/170911_73je078k546ffdaj8d0bg75bh746d_220x90.gif" alt=""> -->
+			</div>
+			<div class="search">
+				<div>
+					<span>搜商品</span>
+					<input type="text" placeholder="请输入关键字" data-data="search"/>
+					<button data-data="button">搜&nbsp;&nbsp;索</button>
+				</div>
+				<ul class="ul"></ul>
+				<ul data-data="list" class="list" type="display:none"></ul>
+			</div>
+			<div class="redPacket">
+ 				<!--<img src="../image/nav/170731_332i942507chai1e2icba04476i80_440x180.png" alt=""> -->
+			</div>
+		</div>
+	</header>
+    <!--  页面轮播  -->
+	<div id="banner">
+		<ul id="show">
+			<li class="b5">
+				<img src="image/banner/1.jpg">
+			</li>
+			<li class="b4">
+				<img src="image/banner/2.jpg">
+			</li>
+			<li class="b3">
+				<img src="image/banner/6.jpg">
+			</li>
+			<li class="b2">
+				<img src="image/banner/4.jpg">
+			</li>
+			<li class="b1">
+				<img src="image/banner/5.jpg">
+			</li>
+		</ul>
+
+		<div id="prev">
+			<img src="image/banner/prev.png" class="direction">
+		</div>
+		<div id="next">
+			<img src="image/banner/next.png" class="direction">
+		</div>
+	</div>
+	<!-- 	限时抢购 -->
+	<div id="minute">
+		<ul class="clear">
+			<li></li>
+			<li>限时抢购</li>
+		</ul>
+		<div id="last-minute"></div>
+	</div>
+	
+
+    <!--  购物指南 -->
+	<!--<div id="handbook">
+	    <div class="main clear">
+			<!--  发现好货 --
+			<div class="find-good">
+				<div class="clear">
+					<h1>发现好货</h1>
+					<p>发现品质生活</p>
+				</div>
+				<ul class="clear">
+					<li class="clear">
+						<div>						
+							<p>修身显瘦</p>
+							<p>百搭时尚</p>
+						</div>
+						<div>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+						</div>
+					</li>
+					<li class="clear">
+						<div>						
+							<p>修身显瘦</p>
+							<p>百搭时尚</p>
+						</div>
+						<div>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+						</div>
+					</li>
+					<li class="clear">
+						<div>						
+							<p>修身显瘦</p>
+							<p>百搭时尚</p>
+						</div>
+						<div>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+						</div>
+					</li>
+					<li class="clear">
+						<div>						
+							<p>修身显瘦</p>
+							<p>百搭时尚</p>
+						</div>
+						<div>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+						</div>
+					</li>
+					<li class="clear">
+						<div>						
+							<p>修身显瘦</p>
+							<p>百搭时尚</p>
+						</div>
+						<div>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+						</div>
+					</li>
+					<li class="clear">
+						<div>						
+							<p>修身显瘦</p>
+							<p>百搭时尚</p>
+						</div>
+						<div>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--  会买专辑 --
+			<div class="special">
+				<div class="clear">
+					<h1>发现好货</h1>
+					<p>发现品质生活</p>
+				</div>
+				<div>
+					<ul class="clear">
+						<li>
+							<div>农药不再坑，高配游戏手机助您超神</div>
+						</li>
+						<li>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+						</li>
+						<li>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+						</li>
+						<li>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+						</li>
+					</ul>
+					<hr>
+					<ul class="clear">
+						<li>
+							<div>农药不再坑，高配游戏手机助您超神</div>
+						</li>
+						<li>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+						</li>
+						<li>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+						</li>
+						<li>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--  排行风云榜 --
+			<div class="rank">
+				<div class="clear">
+					<h1>发现好货</h1>
+					<p>发现品质生活</p>
+				</div>
+				<ul class="clear">
+					<li>女&nbsp;&nbsp;装</li>
+					<li>|</li>
+					<li>男&nbsp;&nbsp;装</li>
+					<li>|</li>
+					<li>女&nbsp;&nbsp;鞋</li>
+					<li>|</li>
+					<li>男&nbsp;&nbsp;鞋</li>
+				</ul>
+				<hr>
+				<div>
+					<ul class="clear">
+						<li>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+							<p>刺绣十字绣</p>
+							<p>花十字绣九</p>
+							<div>1</div>
+						</li>
+						<li>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+							<p>刺绣十字</p>
+							<p>花十字绣</p>
+							<div>1</div>
+						</li>
+						<li>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+							<p>刺绣十字绣</p>
+							<p>花十字绣九</p>
+							<div>1</div>
+						</li>
+						<li>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+							<p>刺绣十字绣</p>
+							<p>花十字绣九</p>
+							<div>1</div>
+						</li>
+						<li>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+							<p>刺绣十字绣</p>
+							<p>花十字绣九</p>
+							<div>1</div>
+						</li>
+						<li>
+							<img src="image/init/girl-choes/170927_194lf03c9gg5a9blfhihdc521k89k_640x960.jpg" alt="">
+							<p>刺绣十字绣</p>
+							<p>花十字绣九</p>
+							<div>1</div>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--  女装  -->
+	<div id="girl-dress">	    
+		<div class="main">		
+			<!--  导航    -->			
+			<div class="common-nav clear">
+				<ul class="clear">
+					<li></li>
+					<li>女装</li>
+					<li>热门搜索:</li>
+					<li>
+						<a href="javascript:;">毛衣外套</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="javascript:;">一字领</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="javascript:;">连衣裙</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="javascript:;">美女裤</a>
+					</li>
+				</ul>
+			</div>
+			<!--  图片    -->
+			<div  class="clear common-assort">	
+				<div class="left">				    
+					<ul class="clear">
+						<li>时尚</li>
+						<li>漂亮</li>
+						<li>女神</li>
+					</ul>
+					<ul class="clear">
+						<li>温柔</li>
+						<li>大方</li>
+						<li>气质</li>
+					</ul>
+					<ul>
+					    <li>吸睛美裙</li>
+					    <li>开学季  3折热促</li>
+						<li>
+							<a href="#">
+								<img src="image/subdivision/nvzhuang/xiayi/lianyiqun/6/107095116_46ji9k88g44fej0bjle47a32l7kae_640x959.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="center">
+					<ul class="clear">
+					    <li>
+							<p>时髦外套</p>
+						    <p>早秋换新人气单品</p>
+						    <div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nvzhuang/shangyi/fengyi/5/171006_7680j570930a1b9ca3k5cjlblj488_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>潮流新装</p>
+						    <p>明星都在穿，简约大方</p>
+							<div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nvzhuang/shangyi/yiziling/1/170903_67fei66hhl50e9a019e9fh3jeccc9_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>复古风格</p>
+						    <p>百搭舒适，库存有限</p>
+							<div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nvzhuang/xiayi/lianyiqun/8/170924_4hje8g264kdleg00d3ld3hak2ie1b_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>百搭休闲</p>
+							<p>好穿不贵 时髦达人</p>
+						    <div>
+								<a href="javascript:;">						
+									<img src="image/subdivision/nvzhuang/xiayi/lianyiqun/3/170829_4l2j78ff7bfldl6l815f4bijeb405_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>首选榜单</p>
+						    <p>时髦漂亮两不误</p>
+							<div>
+								<a href="javascript:;">
+									<img src="image/subdivision/nvzhuang/shangyi/yiziling/4/111245878_ifrtqnrzgi2dczlghazdambqhayde_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>显瘦牛仔裤</p>
+						    <p>女神修炼款 不止3折</p>
+							<div>
+								<a href="javascript:;">			
+									<img src="image/subdivision/nvzhuang/xiayi/kuzi/6/170809_393gl7jjad9045hficfigd8dblf6b_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+				    <ul class="clear">
+						<li>
+							<a href="javascript:;">
+								<img src="image/init/girl-dress/170329_73be9732l62ff7a26082h5c4e4ai4_120x120.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="image/init/girl-dress/170329_020k9cjkd5degel3a9ljef54lfhh4_120x120.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="image/init/girl-dress/170329_7jagice4khgkbjlgcf5ek80h85739_120x120.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="image/init/girl-dress/170329_4chegf9e6eg06a886di707f52ik86_120x120.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="image/init/girl-dress/170719_5cfg0c433f2de6jagefdcbj4147c8_120x120.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="image/init/girl-dress/170824_339cab34302447276a4gkhd932e8d_120x120.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="image/init/girl-dress/67813709_4gfbl37l68eh2jij8hbd47cdcae8d_120x120.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="image/init/girl-dress/170329_2da2d9ck8kk9bhigf86j3b42f46e7_120x120.jpg" alt="">
+							</a>
+						</li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- 男装 -->
+	<div id="men-clothes">
+		<div class="main">		
+			<!--  导航    -->			
+			<div class="common-nav clear">
+				<ul class="clear">
+					<li></li>
+					<li>男装</li>
+					<li>热门搜索:</li>
+					<li>
+						<a href="javascript:;">棉衣棉服</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="javascript:;">T恤</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="javascript:;">牛仔裤</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="javascript:;">休闲裤</a>
+					</li>
+				</ul>
+				<div>
+					<a href="javascript:;">查看全部 >></a>
+				</div>
+			</div>
+			<!--  图片    -->
+			<div  class="clear common-assort">	
+				<div class="left">				    
+					<ul class="clear">
+						<li>男神</li>
+						<li>帅气</li>
+						<li>冷酷</li>
+					</ul>
+					<ul class="clear">
+						<li>时尚</li>
+						<li>潮装</li>
+						<li>合身</li>
+					</ul>
+					<ul>
+					    <li>帅气高调</li>
+					    <li>过冬季 4折热促</li>
+						<li>
+							<a href="javascript:;">
+								<img src="image/subdivision/nanzhuang/mianao/4/171019_3a9g6i447fcag46je1fhec88067cl_640x960.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="center">
+					<ul class="clear">
+					    <li>
+							<p>大方长款</p>
+						    <p>温暖大方帅气御寒</p>
+						    <div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nanzhuang/mianao/7/171017_5d40e3c29ci0ca1ba02dbchb5b144_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>简洁单调</p>
+						    <p>明星都在穿，简约大方</p>
+							<div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nanzhuang/Tx/3/170808_7hb2id1adkihi1ib5h03k046lde6k_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>修身牛仔</p>
+						    <p>百搭舒适，男神必备</p>
+							<div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nanzhuang/niuku/1/171001_5a73i9bj02260a9a0af8hgghif8cl_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>百搭休闲</p>
+							<p>好穿不贵 时髦达人</p>
+						    <div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nanzhuang/niuku/5/170906_333822j1g5c76b6h23g5d96k47ec3_800x1200.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>情侣套装</p>
+						    <p>恩爱必备 3折起步</p>
+							<div>
+								<a href="javascript:;">
+									<img src="image/subdivision/nanzhuang/Tx/7/170604_4799ej9i16e1c3d7h2dba80h7e0i2_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>军风气质</p>
+						    <p>男神修炼款 不止3折</p>
+							<div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nanzhuang/xiuxian/7/101695604_6b3369g012h797bklgdlce990bgb4_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+				   <img src="image/init/170906_0884aikj2gdgij953j1hdi5c8g5ga_240x360.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- 女鞋 -->
+	<div id="girl-shoes">
+		<div class="main">
+			<!--  导航    -->			
+			<div class="common-nav clear">
+				<ul class="clear">
+					<li></li>
+					<li>女鞋</li>
+					<li>热门搜索:</li>
+					<li>
+						<a href="javascript:;">小白鞋</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="javascript:;">靴子</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="javascript:;">单鞋</a>
+					</li>
+				</ul>
+				<div>
+					<a href="#">查看全部 >></a>
+				</div>
+			</div>
+			<!--  图片    -->
+			<div  class="clear common-assort">
+				<div class="left">				    
+					<ul class="clear">
+						<li>休闲</li>
+						<li>增高</li>
+						<li>大方</li>
+					</ul>
+					<ul class="clear">
+						<li>百搭</li>
+						<li>舒适</li>
+						<li>时尚</li>
+					</ul>
+					<ul>
+					    <li>吸睛美鞋</li>
+					    <li>开学季 美鞋3折热促</li>
+						<li>
+							<a href="javascript:;">
+								<img src="image/subdivision/nvxie/xuezi/2/170802_779kgedcf4ejclb7ggd2hge808jkh_640x960.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="center">
+					<ul class="clear">
+					    <li>
+						    <p>星款小白鞋</p>
+						    <p>明星都在穿，简约大方</p>
+							<div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nvxie/xiaobai/5/170801_3i13af6a7dah8flk5fb699ck0l8hj_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+							<p>时髦单鞋</p>
+						    <p>早秋换新人气单品</p>
+						    <div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nvxie/danxie/2/171012_58j65ie90000l3h3kjc9i7aj04c67_1000x1500.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>活力运动</p>
+						    <p>百搭舒适，走多路都不累</p>
+							<div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nvxie/xiaobai/1/171016_0d2705d184712hci9c37bfd2fc59k_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>百搭休闲</p>
+							<p>好穿不贵 时髦达人</p>
+						    <div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nvxie/xiaobai/8/170828_16g2ak99kc6bll36lhj7g6gk72hgi_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>早秋美靴</p>
+						    <p>时髦温度两不误</p>
+							<div>
+								<a href="javascript:;">
+									<img src="image/subdivision/nvxie/xuezi/6/170914_6l9h7e0h2g7hce546f24cdfd5gfda_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>气质高跟</p>
+						    <p>女神修炼款 不止3折</p>
+							<div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nvxie/danxie/3/171005_2gb02abjkda6i516h4i5029d87a74_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="right" >
+					<img src="image/init/170906_0884aikj2gdgij953j1hdi5c8g5ga_240x360.jpg" alt="">
+				  
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- 男鞋 -->
+	<div id="men-shoes">
+		<div class="main">		
+			<!--  导航    -->			
+			<div class="common-nav clear">
+				<ul class="clear">
+					<li></li>
+					<li>男鞋</li>
+					<li>热门搜索:</li>
+					<li>
+						<a href="javascript:;">运动鞋</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="javascript:;">男靴</a>
+					</li>
+				</ul>
+				<div>
+					<a href="javascript:;">查看全部 >></a>
+				</div>
+			</div>
+			<!--  图片    -->
+			<div  class="clear common-assort">	
+				<div class="left">				    
+					<ul class="clear">
+						<li>百搭</li>
+						<li>舒服</li>
+						<li>帅气</li>
+					</ul>
+					<ul class="clear">
+						<li>温暖</li>
+						<li>短靴</li>
+						<li>大方</li>
+					</ul>
+					<ul>
+					    <li>吸睛美鞋</li>
+					    <li>开学季 美鞋3折热促</li>
+						<li>
+							<a href="javascript:;">
+									
+								<img src="image/subdivision/nanxie/nanxue/8/83224545_212bg6a32hkj9383j7flg5g70ib4g_640x960.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="center">
+					<ul class="clear">
+					    <li>
+							<p>时髦单鞋</p>
+						    <p>早秋换新人气单品</p>
+						    <div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nanxie/yundong/4/171013_5abhk9k835jc5j80abb64h94kd7b0_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>星款小白鞋</p>
+						    <p>明星都在穿，简约大方</p>
+							<div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nanxie/yundong/7/170829_36gdkihgcb8025jh2014l0gajl42l_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>活力运动</p>
+						    <p>百搭舒适，走多路都不累</p>
+							<div>
+								<a href="javascript:;">	
+									<img src="image/subdivision/nanxie/yundong/1/171003_370a3i12c0ligjh5icehblk2id8l8_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>百搭休闲</p>
+							<p>好穿不贵 时髦达人</p>
+						    <div>
+								<a href="javascript:;">								
+									<img src="image/subdivision/nanxie/nanxue/5/170930_7adl0ckc8c53l3ib01i4602jk9fce_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>早秋美靴</p>
+						    <p>时髦温度两不误</p>
+							<div>
+								<a href="javascript:;">
+									<img src="image/subdivision/nanxie/yundong/5/171020_3g47b07ka4a3didih0l3a941l0g3k_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					    <li>
+						    <p>气质高跟</p>
+						    <p>女神修炼款 不止3折</p>
+							<div>
+								<a href="javacript:;">								
+									<img src="image/subdivision/nanxie/nanxue/1/170905_203ig2j89kki9ai3dgg1l7khe312k_640x960.jpg" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<img src="image/init/170906_0884aikj2gdgij953j1hdi5c8g5ga_240x360.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--  喜欢  -->      
+	<div id="love">
+	    
+	</div>
+	<!-- 页面底部 -->
+	<footer></footer>
+		
+	<script src="js/jquery.js"></script>
+	<script src="js/search.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/banner.js"></script>
+    <script>
+		
+	</script> 	
+</body>
+</html>

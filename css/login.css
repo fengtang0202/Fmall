@@ -1,0 +1,43 @@
+body{
+	width:100%;
+	height:100%;
+	background:url(../image/register/proxy.jpg) no-repeat;
+	background-size: cover;
+}
+form{
+	margin-top:160px;
+	margin-left:180px;
+	background-color:rgba(255,255,255,1);
+	width: 428px;
+	padding: 24px 0;
+}
+form > div{
+	margin:2px auto;
+	font-size:16px;
+	width: 273px;
+}
+form > div span{
+	color:red;
+	display:block;
+	height:25px;
+	line-height:25px;
+}
+form > div > a{
+	color: black;
+	padding-top: 10px;
+    display: inline-block;
+	margin-top: 18px;
+	border-radius:5px;
+}
+form > div > a:nth-child(1){
+	float:left;
+	padding: 10px 41px;
+	background:#769bd8;
+    margin-left: 2px;
+}
+form > div > a:nth-child(2),form > div > a:nth-child(3){
+	float:right;
+	color: blue;
+	font-size: 14px;
+    margin-right: 25px;
+}

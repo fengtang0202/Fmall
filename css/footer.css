@@ -1,0 +1,71 @@
+/*此文件只针对footer.html做样式修改*/
+/*对#foot_box做样式*/
+footer{
+    background-color:#F5F5F5;
+}
+
+/*用浮动的方法把四个列表排在一排*/
+div.main #foot_box ul{
+	margin-top:50px;
+    width:290px;
+	float:left;
+	text-align:center;
+}
+div.main #foot_box ul li.u1,li.u2{
+    margin-bottom:12px;
+}
+footer li.u1 a,li.u2 a{
+	color:#333;
+	font-size:14px;
+}
+footer li>a{
+    margin-right:20px;
+}
+footer ul>li{
+	margin-bottom:10px;
+}
+/*分割线*/
+footer hr.h1,hr.h2{
+	width:960;
+	height:2px;
+    background:#E66880;
+	border:none;
+}
+footer hr.h1{
+	margin-top:16px;
+	margin-bottom:16px;
+}
+/*foot_nav样式*/
+#foot_nav p{
+    margin:12px 0;
+	text-align:center;
+}
+#foot_nav p a{
+    color:#666;
+	margin:3px;
+}
+#foot_nav p a:hover{
+    color:#E66880;
+}
+/*foot_footer样式*/
+#foot_footer div{
+    margin:10px 0;
+	text-align:center;
+	font-size:12px;
+}
+#foot_footer div a{
+    color:#666;
+	margin-right:10px;
+}
+#foot-footer div a:hover{
+    color:#E66880;
+}
+#foot_footer div a.copy{
+    color:#999;
+}
+#foot_footer div a.copy:hover{
+    color:#999;
+}
+#foot_footer div p{
+    color:#999;
+}
